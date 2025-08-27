@@ -1,0 +1,50 @@
+{
+  "features_usadas": [
+    "motor_temp",
+    "bearing_temp",
+    "vibration",
+    "load",
+    "ambient_temp",
+    "operating_hours",
+    "delta_temp",
+    "relative_load",
+    "vib_load_index"
+  ],
+  "n_train": 3450,
+  "n_test": 900,
+  "classification_rf": {
+    "accuracy": 0.9666666666666667,
+    "precision": 0.9593267882187938,
+    "recall": 0.9985401459854014,
+    "f1": 0.9785407725321889,
+    "roc_auc": 0.9203259208962824
+  },
+  "classification_baseline_rule": {
+    "accuracy": 0.36444444444444446,
+    "precision": 0.937984496124031,
+    "recall": 0.17664233576642335,
+    "f1": 0.2972972972972973
+  },
+  "regression_rf": {
+    "mae": 0.2001317151218158,
+    "rmse": 0.3690900997765038
+  },
+  "regression_baseline_mean": {
+    "mae": 0.47301915446039283,
+    "rmse": 0.5978708651234889
+  },
+  "xgboost_available": true,
+  "xgboost_results": {
+    "cls": {
+      "accuracy": 0.9544444444444444,
+      "precision": 0.9586894586894587,
+      "recall": 0.9824817518248176,
+      "f1": 0.9704397981254506,
+      "roc_auc": 0.9235375997283992
+    },
+    "reg": {
+      "mae": 0.23771486060574515,
+      "rmse": 0.4206254251630697
+    }
+  }
+}
